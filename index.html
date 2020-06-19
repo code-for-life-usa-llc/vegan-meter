@@ -11,7 +11,10 @@
             
             img{
                 height: 300px;
-                width:300px;
+                text-align:center;
+                width:50%;
+                display:block;
+                margin:auto;
             }
         </style>
     </head>
@@ -234,6 +237,16 @@
             <img align="center" src="veggie-spread.jpg">
             <h1>CONGRATULATIONS! YOU ARE MADE TO BE A VEGAN!</h1>
         </div>
+        
+        <div align="center" id="veganSorta" class="hide">
+            <img align="center" src="veggie-spread.jpg">
+            <h1>YOU CAN SORTA BE A VEGAN...</h1>
+        </div>
+        
+          <div align="center" id="veganNO" class="hide">
+            <img align="center" src="veggie-spread.jpg">
+            <h1>YOU CAN NOT BE A VEGAN. SOMETHING TELLS ME YOU WERE HOPING YOU WEREN'T.</h1>
+        </div>
     
     
         
@@ -361,8 +374,10 @@
                     
                     if(finalScore <= 28){
                        console.log("Not a Vegan!");
+                       document.getElementById("veganNo").style.display = "inline"
                     }else if(finalScore >= 29 && finalScore <= 45){
                        console.log("Sorta Vegan!");
+                       document.getElementById("veganSorta").style.display = "inline"
                     }else{
                        console.log("Super Vegan!");  
                        document.getElementById("veganChampion").style.display = "inline"
