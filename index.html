@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Vegan Meter</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <style>
+            .hide{
+                display: none;
+            }  
+            
+            img{
+                height: 300px;
+                width:300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="progress">
+          <div id="myProgressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <br><br><br>
+<!--        Question 1-->
+        <div id="question1" align="center">
+            <h4>What is your favorite color?</h4>
+            <br>
+            <div class="form-check">
+                <input type="radio" value="2" name="choice" class="form-check-input question1Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Blue</label>
+            </div>
+            <div class="form-check">
+                <input  type="radio" value="4" name="choice" class="form-check-input question1Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Red</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="6" name="choice" class="form-check-input question1Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Green</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="8" name="choice" class="form-check-input question1Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+            </div>
+            <br><br>
+            <div>
+              <button id="toQuestion2" type="button" class="btn btn-dark">Next</button>  
+            </div>
+            
+        </div>
+        
+<!--        Question 2-->
+        <div id="question2" class="hide" align="center">
+            <h4>What is your favorite TV show?</h4>
+            <br>
+            <div class="form-check">
+                <input type="radio" value="2" name="choice" class="form-check-input question2Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Deathnote</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="4" name="choice" class="form-check-input question2Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">DBZ</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="6" name="choice" class="form-check-input question2Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Naruto</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="8" name="choice" class="form-check-input question2Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I don't have one.</label>
+            </div>
+            <div>
+              <button id="toQuestion3" type="button" class="btn btn-dark">Next</button>  
+            </div>
+        </div>
+        
+<!--        Question 3-->
+        <div id="question3" class="hide" align="center">
+            <h4>What is your favorite food?</h4>
+            <br>
+            <div class="form-check">
+                <input type="radio" value="2" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Blue</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="4" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Red</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="6" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Green</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="8" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+            </div>
+            <div>
+              <button id="toQuestion4" type="button" class="btn btn-dark">Next</button>  
+            </div>
+        </div>
+        
+<!--        Question 4-->
+        <div id="question4" class="hide" align="center">
+            <h4>What is your favorite color?</h4>
+            <br>
+            <div class="form-check">
+                <input type="radio" value="2" name="choice" class="form-check-input question4Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Blue</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="4" name="choice" class="form-check-input question4Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Red</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="6" name="choice" class="form-check-input question4Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Green</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="8" name="choice" class="form-check-input question4Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+            </div>
+            <div>
+              <button id="toQuestion5" type="button" class="btn btn-dark">Next</button>  
+            </div>
+        </div>
+        
+<!--        Question 5-->
+        <div id="question5" class="hide" align="center">
+            <h4>What is your favorite color?</h4>
+            <br>
+            <div class="form-check">
+                <input type="radio" value="2" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Blue</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="4" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Red</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="6" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Green</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="8" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+            </div>
+            <div>
+              <button id="toQuestion6" type="button" class="btn btn-dark">Next</button>  
+            </div>
+        </div>
+        
+        
+<!--        Question 6-->
+        <div id="question6" class="hide" align="center">
+            <h4>What is your favorite color?</h4>
+            <br>
+            <div class="form-check">
+                <input type="radio" value="2" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Blue</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="4" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Red</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="6" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Green</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="8" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+            </div>
+            <div>
+              <button id="toQuestion7" type="button" class="btn btn-dark">Next</button>  
+            </div>
+        </div>
+        
+        
+<!--        Question 7-->
+        <div id="question7" class="hide" align="center">
+            <h4>What is your favorite color?</h4>
+            <br>
+            <div class="form-check">
+                <input type="radio" value="2" name="choice" class="form-check-input question7Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Blue</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="4" name="choice" class="form-check-input question7Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Red</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="6" name="choice" class="form-check-input question7Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Green</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="8" name="choice" class="form-check-input question7Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+            </div>
+            <div>
+              <button id="toQuestion8" type="button" class="btn btn-dark">Next</button>  
+            </div>
+        </div>
+        
+<!--        Question 8-->
+        <div id="question8" class="hide" align="center">
+            <h4>What is your favorite color?</h4>
+            <br>
+            <div class="form-check">
+                <input type="radio" value="2" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Blue</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="4" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Red</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="6" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Green</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="8" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+            </div>
+            <div>
+              <button id="toResults" type="button" class="btn btn-dark">Get Results</button>  
+            </div>
+        </div>
+        <br>
+        <div align="center">
+            <p class="hide" id="errorMessage" style="background-color: indianred"><strong>Please Choose an Answer Before Submitting...</strong></p>
+        </div>
+        
+        <p id="currentScore" class="hide">0</p>
+        
+        <div align="center" id="veganChampion" class="hide">
+            <img align="center" src="veggie-spread.jpg">
+            <h1>CONGRATULATIONS! YOU ARE MADE TO BE A VEGAN!</h1>
+        </div>
+    
+    
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
+        <script>
+            
+            let nextQuestion2 = document.getElementById("toQuestion2");
+            let nextQuestion3 = document.getElementById("toQuestion3");
+            let nextQuestion4 = document.getElementById("toQuestion4");
+            let nextQuestion5 = document.getElementById("toQuestion5");
+            let nextQuestion6 = document.getElementById("toQuestion6");
+            let nextQuestion7 = document.getElementById("toQuestion7");
+            let nextQuestion8 = document.getElementById("toQuestion8");
+            
+            let getResults = document.getElementById("toResults");
+            
+            // Button to Question 2
+            nextQuestion2.addEventListener("click", function(){
+               updateScore('question1Answers', "question1", "question2");            
+            });
+            
+            
+            // Button to Question 3
+            nextQuestion3.addEventListener("click", function(){
+                updateScore('question2Answers', 'question2', "question3");    
+            });
+            
+            
+            // Button to Question 4
+            nextQuestion4.addEventListener("click", function(){
+                updateScore('question3Answers', 'question3', "question4");  
+            });
+            
+        
+            // Button to Question 5
+            nextQuestion5.addEventListener("click", function(){
+                updateScore('question4Answers', 'question4', "question5");  
+            });
+            
+            
+            // Button to Question 6
+            nextQuestion6.addEventListener("click", function(){
+                updateScore('question5Answers', 'question5', "question6");  
+            });
+            
+            
+            // Button to Question 7
+            nextQuestion7.addEventListener("click", function(){
+                updateScore('question6Answers', 'question6', "question7");  
+            });
+            
+            // Button to Question 8
+             nextQuestion8.addEventListener("click", function(){
+                updateScore('question7Answers', 'question7', "question8");  
+            });
+            
+            getResults.addEventListener("click", function(){
+                 completeSurvey();
+                
+                 
+                
+            });
+            
+            
+            
+            
+            
+            
+            function updateScore(questionAnswerID, hideQuestion, showQuestion){
+                document.getElementById("errorMessage").style.display = "none";
+                let answers = document.getElementsByClassName(questionAnswerID);
+                let value = 0;
+                
+                for(answer of answers ){
+                    if(answer.checked){
+                        value = answer.value;
+                       document.getElementById('currentScore').innerHTML = parseInt( document.getElementById('currentScore').innerHTML ) + parseInt(answer.value);
+                    }
+                }                
+                
+                if(value > 0){
+                    document.getElementById(hideQuestion).style.display = "none";
+                    document.getElementById(showQuestion).style.display = "inline"; 
+                    
+                    
+                     document.getElementById("myProgressBar").style.width = String(parseInt(document.getElementById("myProgressBar").style.width.slice(0,-1)) + 12.5) + "%";
+                }else{
+                   document.getElementById("errorMessage").style.display = "inline";
+                    return;
+                }
+                
+                
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            function completeSurvey(questionAnswerID, hideQuestion){
+                document.getElementById("errorMessage").style.display = "none";
+                let answers = document.getElementsByClassName("question8Answers");
+                let value = 0;
+                
+                for(answer of answers ){
+                    if(answer.checked){
+                        value = answer.value;
+                       document.getElementById('currentScore').innerHTML = parseInt( document.getElementById('currentScore').innerHTML ) + parseInt(answer.value);
+                    }
+                }  
+                
+                let finalScore = parseInt(document.getElementById('currentScore').innerHTML);
+                
+                if(value > 0){
+                    document.getElementById("question8").style.display = "none";                    
+                     document.getElementById("myProgressBar").style.width = "100%";
+                    
+                    if(finalScore <= 28){
+                       console.log("Not a Vegan!");
+                    }else if(finalScore >= 29 && finalScore <= 45){
+                       console.log("Sorta Vegan!");
+                    }else{
+                       console.log("Super Vegan!");  
+                       document.getElementById("veganChampion").style.display = "inline"
+                    }
+                }else{
+                   document.getElementById("errorMessage").style.display = "inline";
+                    return;
+                }
+                
+                
+            }
+            
+    
+            
+            
+            
+        </script>
+    </body>
+
+</html>
