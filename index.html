@@ -9,18 +9,24 @@
                 display: none;
             }  
             
-            img{
+            .veggie{
                 height: 300px;
                 text-align:center;
                 width:50%;
                 display:block;
                 margin:auto;
             }
+            
+           
         </style>
     </head>
     <body>
+        
         <div class="progress">
           <div id="myProgressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+        <div align="center">
+            <img height="100px" width="100px" style="border-radius: 50%;" src="logo.jpg">
         </div>
         <br><br><br>
 <!--        Question 1-->
@@ -52,23 +58,23 @@
         
 <!--        Question 2-->
         <div id="question2" class="hide" align="center">
-            <h4>What is your favorite TV show?</h4>
+            <h4>Where do you get your protein?</h4>
             <br>
             <div class="form-check">
                 <input type="radio" value="2" name="choice" class="form-check-input question2Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Deathnote</label>
+                <label class="form-check-label" for="exampleCheck1">Eggs</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="4" name="choice" class="form-check-input question2Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">DBZ</label>
+                <label class="form-check-label" for="exampleCheck1">Beans</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="6" name="choice" class="form-check-input question2Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Naruto</label>
+                <label class="form-check-label" for="exampleCheck1">Milk-Based Protein Powder</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="8" name="choice" class="form-check-input question2Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">I don't have one.</label>
+                <label class="form-check-label" for="exampleCheck1">Corn</label>
             </div>
             <div>
               <button id="toQuestion3" type="button" class="btn btn-dark">Next</button>  
@@ -77,23 +83,23 @@
         
 <!--        Question 3-->
         <div id="question3" class="hide" align="center">
-            <h4>What is your favorite food?</h4>
+            <h4>Which vegetable is the best choice to eat for a vegan?</h4>
             <br>
             <div class="form-check">
                 <input type="radio" value="2" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Blue</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" value="4" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Red</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" value="6" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Green</label>
+                <label class="form-check-label" for="exampleCheck1">Tomato</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="8" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+                <label class="form-check-label" for="exampleCheck1">Sweet Potato</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="0" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Chicken</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="4" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Tofu</label>
             </div>
             <div>
               <button id="toQuestion4" type="button" class="btn btn-dark">Next</button>  
@@ -102,23 +108,23 @@
         
 <!--        Question 4-->
         <div id="question4" class="hide" align="center">
-            <h4>What is your favorite color?</h4>
+            <h4>What is your favorite spot for lunch?</h4>
             <br>
             <div class="form-check">
                 <input type="radio" value="2" name="choice" class="form-check-input question4Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Blue</label>
+                <label class="form-check-label" for="exampleCheck1">Checkers</label>
             </div>
             <div class="form-check">
-                <input type="radio" value="4" name="choice" class="form-check-input question4Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Red</label>
+                <input type="radio" value="2" name="choice" class="form-check-input question4Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Ralph's Pizza</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="6" name="choice" class="form-check-input question4Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Green</label>
+                <label class="form-check-label" for="exampleCheck1">Dig Inn</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="8" name="choice" class="form-check-input question4Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+                <label class="form-check-label" for="exampleCheck1">Just Salad</label>
             </div>
             <div>
               <button id="toQuestion5" type="button" class="btn btn-dark">Next</button>  
@@ -127,23 +133,23 @@
         
 <!--        Question 5-->
         <div id="question5" class="hide" align="center">
-            <h4>What is your favorite color?</h4>
+            <h4>What is your favorite snack?</h4>
             <br>
             <div class="form-check">
-                <input type="radio" value="2" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Blue</label>
+                <input type="radio" value="0" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Bacon</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="4" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Red</label>
+                <label class="form-check-label" for="exampleCheck1">Popcorn</label>
             </div>
             <div class="form-check">
-                <input type="radio" value="6" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Green</label>
+                <input type="radio" value="0" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Greek Yogurt</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="8" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+                <label class="form-check-label" for="exampleCheck1">Almonds</label>
             </div>
             <div>
               <button id="toQuestion6" type="button" class="btn btn-dark">Next</button>  
@@ -153,23 +159,23 @@
         
 <!--        Question 6-->
         <div id="question6" class="hide" align="center">
-            <h4>What is your favorite color?</h4>
+            <h4>How long can you abstain from eating red meat?</h4>
             <br>
             <div class="form-check">
-                <input type="radio" value="2" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Blue</label>
-            </div>
-            <div class="form-check">
                 <input type="radio" value="4" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Red</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" value="6" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Green</label>
+                <label class="form-check-label" for="exampleCheck1">2 Weeks</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="8" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+                <label class="form-check-label" for="exampleCheck1">3 Months</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="0" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">1 day</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="6" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">1 month</label>
             </div>
             <div>
               <button id="toQuestion7" type="button" class="btn btn-dark">Next</button>  
@@ -179,23 +185,23 @@
         
 <!--        Question 7-->
         <div id="question7" class="hide" align="center">
-            <h4>What is your favorite color?</h4>
+            <h4>What if you were stuck on a deserted island and had nothing else to eat?</h4>
             <br>
             <div class="form-check">
                 <input type="radio" value="2" name="choice" class="form-check-input question7Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Blue</label>
+                <label class="form-check-label" for="exampleCheck1">Fish</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="4" name="choice" class="form-check-input question7Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Red</label>
+                <label class="form-check-label" for="exampleCheck1">Crab</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="6" name="choice" class="form-check-input question7Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Green</label>
+                <label class="form-check-label" for="exampleCheck1">Birds</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="8" name="choice" class="form-check-input question7Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+                <label class="form-check-label" for="exampleCheck1">Coconuts</label>
             </div>
             <div>
               <button id="toQuestion8" type="button" class="btn btn-dark">Next</button>  
@@ -204,23 +210,23 @@
         
 <!--        Question 8-->
         <div id="question8" class="hide" align="center">
-            <h4>What is your favorite color?</h4>
+            <h4>If you were blind-folded and had to take one thing out of your refrigerator what are you mostly to grab?</h4>
             <br>
             <div class="form-check">
-                <input type="radio" value="2" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Blue</label>
+                <input type="radio" value="8" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Almond Milk</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="4" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Red</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" value="6" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Green</label>
+                <label class="form-check-label" for="exampleCheck1">Pizza</label>
             </div>
             <div class="form-check">
                 <input type="radio" value="8" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Yellow</label>
+                <label class="form-check-label" for="exampleCheck1">Kale</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" value="0" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Pepsi</label>
             </div>
             <div>
               <button id="toResults" type="button" class="btn btn-dark">Get Results</button>  
@@ -234,17 +240,17 @@
         <p id="currentScore" class="hide">0</p>
         
         <div align="center" id="veganChampion" class="hide">
-            <img align="center" src="veggie-spread.jpg">
+            <img class="veggie" align="center" src="veggie-spread.jpg">
             <h1>CONGRATULATIONS! YOU ARE MADE TO BE A VEGAN!</h1>
         </div>
         
         <div align="center" id="veganSorta" class="hide">
-            <img align="center" src="veggie-spread.jpg">
+            <img class="veggie" align="center" src="veggie-spread.jpg">
             <h1>YOU CAN SORTA BE A VEGAN...</h1>
         </div>
         
           <div align="center" id="veganNO" class="hide">
-            <img align="center" src="veggie-spread.jpg">
+            <img class="veggie" align="center" src="veggie-spread.jpg">
             <h1>YOU CAN NOT BE A VEGAN. SOMETHING TELLS ME YOU WERE HOPING YOU WEREN'T.</h1>
         </div>
     
