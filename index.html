@@ -12,7 +12,7 @@
             .veggie{
                 height: 300px;
                 text-align:center;
-                width:50%;
+                width:40%;
                 display:block;
                 margin:auto;
             }
@@ -26,7 +26,7 @@
           <div id="myProgressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div><br>
         <div align="center">
-            <img height="100px" width="100px" style="border-radius: 50%;" src="logo.jpg">
+            <a href="index.html"><img height="100px" width="100px" style="border-radius: 50%;" src="logo.jpg"></a>
         </div>
         <br><br><br>
 <!--        Question 1-->
@@ -94,7 +94,7 @@
                 <label class="form-check-label" for="exampleCheck1">Sweet Potato</label>
             </div>
             <div class="form-check">
-                <input type="radio" value="0" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
+                <input type="radio" value="1" name="choice" class="form-check-input question3Answers" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Chicken</label>
             </div>
             <div class="form-check">
@@ -136,7 +136,7 @@
             <h4>What is your favorite snack?</h4>
             <br>
             <div class="form-check">
-                <input type="radio" value="0" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
+                <input type="radio" value="1" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Bacon</label>
             </div>
             <div class="form-check">
@@ -144,7 +144,7 @@
                 <label class="form-check-label" for="exampleCheck1">Popcorn</label>
             </div>
             <div class="form-check">
-                <input type="radio" value="0" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
+                <input type="radio" value="1" name="choice" class="form-check-input question5Answers" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Greek Yogurt</label>
             </div>
             <div class="form-check">
@@ -170,7 +170,7 @@
                 <label class="form-check-label" for="exampleCheck1">3 Months</label>
             </div>
             <div class="form-check">
-                <input type="radio" value="0" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
+                <input type="radio" value="1" name="choice" class="form-check-input question6Answers" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">1 day</label>
             </div>
             <div class="form-check">
@@ -225,7 +225,7 @@
                 <label class="form-check-label" for="exampleCheck1">Kale</label>
             </div>
             <div class="form-check">
-                <input type="radio" value="0" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
+                <input type="radio" value="1" name="choice" class="form-check-input question8Answers" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Pepsi</label>
             </div>
             <div>
@@ -240,18 +240,18 @@
         <p id="currentScore" class="hide">0</p>
         
         <div align="center" id="veganChampion" class="hide">
+             <h1>CONGRATULATIONS SUPER VEGAN! YOU ARE MADE TO BE A VEGAN!</h1>
             <img class="veggie" align="center" src="veggie-spread.jpg">
-            <h1>CONGRATULATIONS! YOU ARE MADE TO BE A VEGAN!</h1>
         </div>
         
         <div align="center" id="veganSorta" class="hide">
-            <img class="veggie" align="center" src="veggie-spread.jpg">
             <h1>YOU CAN SORTA BE A VEGAN...</h1>
+            <img class="veggie" align="center" src="veggie-spread.jpg">
         </div>
         
-          <div align="center" id="veganNO" class="hide">
-            <img class="veggie" align="center" src="veggie-spread.jpg">
-            <h1>YOU CAN NOT BE A VEGAN. SOMETHING TELLS ME YOU WERE HOPING YOU WEREN'T.</h1>
+          <div align="center" id="veganNot" class="hide">
+            <h1>NOT A VEGAN. SOMETHING TELLS ME YOU WERE HOPING YOU WEREN'T.</h1>
+            <img class="veggie" align="center" src="burger.jpg">
         </div>
     
     
@@ -379,14 +379,17 @@
                      document.getElementById("myProgressBar").style.width = "100%";
                     
                     if(finalScore <= 28){
-                       console.log("Not a Vegan!");
-                       document.getElementById("veganNo").style.display = "inline"
+                       // Not a Vegan!
+                       document.body.style.backgroundColor = "red";
+                       document.getElementById("veganNot").style.display = "inline"
                     }else if(finalScore >= 29 && finalScore <= 45){
-                       console.log("Sorta Vegan!");
-                       document.getElementById("veganSorta").style.display = "inline"
+                       // Sorta Vegan!
+                       document.getElementById("veganSorta").style.display = "inline";
+                       document.body.style.backgroundColor = "yellow";
                     }else{
-                       console.log("Super Vegan!");  
-                       document.getElementById("veganChampion").style.display = "inline"
+                       // Vegan Champion!
+                       document.getElementById("veganChampion").style.display = "inline";
+                       document.body.style.backgroundColor = "green";
                     }
                 }else{
                    document.getElementById("errorMessage").style.display = "inline";
